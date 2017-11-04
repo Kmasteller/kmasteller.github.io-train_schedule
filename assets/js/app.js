@@ -68,6 +68,8 @@ $("#submit").on("click", function(event) {
 	dest = $("#destination").val().trim();
 	firstTime = $("#firstTrainTime").val().trim();
 	freq = $("#frequency").val().trim();
+
+
 	// IGNORE THIS CODE THAT IS COMMENTED OUT
 	// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	// console.log(train);
@@ -110,8 +112,12 @@ $("#submit").on("click", function(event) {
 		frequency: freq,
 		nextArrival: nextArrival,
 		minutesAway: minutesAway
-});
-
+	});
+	
+	$("#train-name").val("");
+	$("#destination").val("");
+	$("#firstTrainTime").val("");
+	$("#frequency").val("");
 });
 
 // Failed code snippets below
