@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Train Exercise</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script
+ 	src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ 	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="jumbotron text-center">
+			<h1><strong>Train Time is Anytime</strong><h1>
+			<h3><strong>Never Give Up, You'll Get There!!</strong></h3>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading"><strong>Current Train Schedule</strong></div>
+			<div class="panel-body">
+				<table class="table">
+					<thead>	
+						<tr>
+							<td>Train Name</td>
+							<td>Destination</td>
+							<td>Frequency (min)</td>
+							<td>Next Arrival</td>
+							<td>Minutes Away</td>
+						</tr>
+					</thead>
+					<tbody id="train-table">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading"><strong>Add Train</strong></div>
+			<div class="panel-body">
+				<div><strong>Train Name:</strong></div>
+	  			<input type="text" class="form-control" id="train-name">
+				<br>
+				<div><strong>Destination:</strong></div>
+	  			<input type="text" class="form-control" id="destination">
+				<br>
+				<div><strong>First Train time (HH:mm - Military Time - ex: 20:40):</strong></div>
+	  			<input type="text" class="form-control" id="firstTrainTime">
+	  			<br>
+				<div><strong>Frequency (min):</strong></div>
+	  			<input type="text" class="form-control" id="frequency">
+				<br>
+				<button class="btn-primary btn-md" id="submit" value="Submit"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+			</div>
+		</div>
+
+	</div>
+	<!-- link to js file -->
+	<div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</div>
+</body>
+</html>
